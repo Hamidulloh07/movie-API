@@ -47,9 +47,9 @@ let tempRenderMovie = (movies) => {
 }
 
 // fetchs
-const renderMovie = async (movie = "", cotegory = "", page = 1) => {
+const renderMovie = async (movie = "", category = "", page = 1) => {
   try {
-    const response = await fetch(`http://www.omdbapi.com/?&apikey=2ae854bc&s=${movie}&page=${page}&type=${cotegory}`);
+    const response = await fetch(`http://www.omdbapi.com/?&apikey=2ae854bc&s=${movie}&page=${page}&type=${category}`);
     const data = await response.json();
     // console.log(sdsds);
     arr = data.Search
