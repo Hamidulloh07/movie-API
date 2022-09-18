@@ -46,11 +46,12 @@ let tempRenderMovie = (movies) => {
   elList.appendChild(createFragment)
 }
 
+
 // fetchs
 const renderMovie = async (movie = "", category = "", page = 1) => {
   try {
     
-    const response = await fetch(`http://www.omdbapi.com/?&apikey=2ae854bc&s=${movie}&type=${category}&page=${page}`);
+    const response = await fetch(`https://www.omdbapi.com/?&apikey=2ae854bc&s=${movie}&type=${category}&page=${page}`);
 
     const data = await response.json();
     // console.log(sdsds);
